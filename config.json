@@ -10,9 +10,9 @@
         "type": "MnistDataLoader",
         "args":{
             "data_dir": "data/",
-            "batch_size": 128,
+            "batch_size": 8,
             "shuffle": true,
-            "validation_split": 0.1,
+            "validation_split": 0.176470588235294,
             "num_workers": 2
         }
     },
@@ -36,7 +36,10 @@
         }
     },
     "trainer": {
-        "epochs": 100,
+        "epochs": 91,
+
+        "tearcher_learning_rate": 0.0009512,
+        "student_learning_rate": 0.003807,
 
         "save_dir": "saved/",
         "save_period": 1,
